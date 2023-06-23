@@ -1,0 +1,15 @@
+name: filter
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - default
+dependencies:
+  - python=3.10.2
+  - snakemake=7.3.0 
+  - snakemake-minimal=7.3.0
+  - snpeff=5.1
+  - snpsift=4.3.1t
+  - matplotlib=3.4.3
+  - pip
+  
