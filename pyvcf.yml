@@ -1,0 +1,13 @@
+name: pyvcf
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - default
+dependencies:
+  - python=3.9
+  - snakemake=6.9.1
+  - snakemake-minimal=6.9.1
+  - pyvcf=0.6.8
+  - matplotlib=3.4.3
+  - pip
