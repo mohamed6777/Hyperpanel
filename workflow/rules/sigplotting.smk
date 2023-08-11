@@ -1,9 +1,10 @@
 rule sigprofiler:
-    input: "/fast/projects/hyperpanel/work/vcfs/TSO500/{dataset}.vcf"
-    output: "results/plots/TSO500/Filter0/{dataset}_SBS96.pdf"
-    threads: 3 # Adjust this value based on the parallelism you want
+    input: "results/filtered/TSO500/Filter2/f2.{dataset}.vcf"
+    output: "results/plots/TSO500/Filter2/f2.{dataset}_SBS96.pdf"
+    threads: 8 # Adjust this value based on the parallelism you want
     resources:
-        mem_mb=20000
+        mem_mb=2000,
+        parallel_star=1,
     run:
         import tempfile
         import os
