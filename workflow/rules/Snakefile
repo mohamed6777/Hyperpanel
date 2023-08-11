@@ -1,0 +1,9 @@
+configfile: "config/config.yaml"
+# Define the target rule
+rule all:
+	input:
+		expand("results/filtered/OneDrive/Filter2/f2.{dataset}.vcf", dataset=config["DATASET"])
+
+# Define the modified rule sigprofiler
+include: "workflow/rules/sigplotting.smk"
+include: "workflow/rules/filter2.smk"

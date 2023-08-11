@@ -1,4 +1,3 @@
----
 snakefile: Snakefile
 cores: 3
 show-failed-logs: True
@@ -10,7 +9,6 @@ restart-times: 3
 jobname: "{rule}.{jobid}"              # Provide a custom name for the jobscript that is submitted to the cluster.
 max-status-checks-per-second: 10       #Maximal number of job status checks per second, default is 10
 jobs: 400                              #Use at most N CPU cluster/cloud jobs in parallel.
-
 # Example resource configuration
 default-resources:
    - runtime=100
